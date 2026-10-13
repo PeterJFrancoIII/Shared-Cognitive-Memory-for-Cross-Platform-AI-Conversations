@@ -1,0 +1,48 @@
+# ==============================================================================
+# Shared Cognitive Memory - Git Ignore Policy
+# ==============================================================================
+# CRITICAL RULE: Never commit private cognitive graph data, runtime state,
+# credentials, tokens, logs, or temporary lock files.
+
+# Canonical cognitive graph & local backups (PRIVATE LOCAL HOST STATE ONLY)
+memory.json
+memory*.json
+*.bak
+*.bak*
+
+# Concurrency locking and atomic temp files
+*.lock
+*.tmp
+
+# Runtime logs
+*.log
+scripts/*.log
+logs/
+
+# Sensitive environment configs and credential files
+.env
+.env.*
+*.token
+*.key
+*.secret
+.shared_memory_tunnel_token
+
+# Node.js dependencies & test artifacts
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+coverage/
+.nyc_output/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE & Editor caches
+.idea/
+.vscode/
+*.swp
+*.swo
+*~

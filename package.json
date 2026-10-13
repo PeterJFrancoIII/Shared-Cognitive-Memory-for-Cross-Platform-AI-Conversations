@@ -1,0 +1,37 @@
+{
+  "name": "shared-cognitive-memory",
+  "version": "2.1.0",
+  "description": "Cross-platform cognitive memory graph & Model Context Protocol (MCP) server enabling shared persistent memory, inter-agent dialogue, and seamless handoffs across AI assistants (Gemini, ChatGPT, Antigravity, Claude, Codex).",
+  "main": "scripts/sse_bridge.js",
+  "scripts": {
+    "start": "node scripts/sse_bridge.js --stdio",
+    "test": "node --test tests/mcp_runtime.test.js",
+    "inspect": "node scripts/inspect_memory.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "shared-memory",
+    "ai-agents",
+    "knowledge-graph",
+    "gemini",
+    "chatgpt",
+    "antigravity",
+    "codex",
+    "multi-agent",
+    "inter-agent-communication"
+  ],
+  "author": "Peter J. Franco III",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PeterJFrancoIII/Shared-Cognitive-Memory-for-Cross-Platform-AI-Conversations.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PeterJFrancoIII/Shared-Cognitive-Memory-for-Cross-Platform-AI-Conversations/issues"
+  },
+  "homepage": "https://github.com/PeterJFrancoIII/Shared-Cognitive-Memory-for-Cross-Platform-AI-Conversations#readme"
+}
